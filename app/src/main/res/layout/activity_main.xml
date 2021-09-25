@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    >
+    <!--  Title  -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assignment Minggu 02"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zhafari Irsyad - 41519120050"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+    <!--  End Title  -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <!--Angka 1-->
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@id/bilangan1"
+            android:layout_marginBottom="5dp"
+            android:text="Bilangan 1"/>
+
+        <EditText
+            android:id="@+id/bilangan1"
+            android:layout_width="match_parent"
+            android:width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Masukkan bilangan 1"
+            android:inputType="numberSigned|numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+        <!--End Angka 1-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <!--Angka 2-->
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@id/bilangan2"
+            android:layout_marginBottom="5dp"
+            android:text="Bilangan 2"/>
+
+        <EditText
+            android:id="@+id/bilangan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="220dp"
+            android:layout_weight="1"
+            android:hint="Masukkan bilangan 2"
+            android:inputType="numberSigned|numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+        <!--End Angka 2-->
+    </LinearLayout>
+
+
+    <!--Hasil-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="numberSigned|numberDecimal"
+        android:labelFor="@id/hasil"
+        android:text="Hasil" />
+
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:focusable="false"
+        android:inputType="numberSigned|numberDecimal"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+    <!--End Hasil-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:onClick="hitung"
+            android:text="+"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/btn_kurang"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue"
+            android:onClick="hitung"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <Button
+            android:id="@+id/btn_kali"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue"
+            android:onClick="hitung"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_bagi"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue"
+            android:onClick="hitung"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
